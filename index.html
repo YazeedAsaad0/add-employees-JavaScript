@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+     <div>
+      <table>
+        <thead>
+          <caption>Employees</caption>
+          <tr class="th1">
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Job role</th>
+            <th scope="col">E-mail</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <td colspan="4">The Name, age and job role for the employees in our company</td>
+        </tfoot>
+       <tbody>
+         <tr>
+             <th scope="row">Yazeed Asa'ad</th>
+             <td>24</td>
+             <td>Web developer</td>
+             <td>yazeed@example.com</td>
+         </tr>
+         <tr>
+             <th scope="row">Tariq Ziad</th>
+             <td>22</td>
+             <td>Unemployed</td>
+             <td>Tariq@example.com</td>
+         </tr>
+         <tr>
+             <th scope="row">Mahmoud Risheq</th>
+             <td>23</td>
+             <td>Web developer</td>
+             <td>mahmoud@example.com</td>
+         </tr>
+         <tr>
+             <th scope="row">Mohammad Derar</th>
+             <td>24</td>
+             <td>Web developer</td>
+             <td>mohammad@example.com</td>
+         </tr>
+         <tr class="th2">
+             <th scope="row">Khalid Jaara</th>
+             <td>27</td>
+             <td>marketing</td>
+             <td>Khalid@example.com</td>
+         </tr>
+       </tbody>
+      </table>
+     </div>
+    <div class="button">
+     <button type="button" name="button3" class="hide-list">Hide Employees bio</button>
+    </div>
+     <div class="open">
+       <button type="button" name="button2" class="hide-bio">Hide Yazeed Bio</button>
+       <div class="bio-btn">
+         <h2>Yazeed Bio</h2>
+         <p>a web developer with over 5 years of experience in the industry. I specialize in creating custom websites and web applications with a focus on user experience and modern web technologies. With a passion for problem solving, I strive to create solutions that are both effective and efficient. My experience includes developing websites using HTML, CSS, JavaScript, PHP and MySQL. I also have experience in using various content management systems such as WordPress and Drupal. I am committed to staying up to date with the latest trends and technologies in the web development world and have a strong commitment to quality and customer satisfaction.</p>
+       </div>
+       <button type="button" name="button2" class="hide-bio">Hide Tariq Bio</button>
+       <div class="bio-btn">
+         <h2>Tariq Bio</h2>
+         <p>a web developer with over 5 years of experience in the industry. I specialize in creating custom websites and web applications with a focus on user experience and modern web technologies. With a passion for problem solving, I strive to create solutions that are both effective and efficient. My experience includes developing websites using HTML, CSS, JavaScript, PHP and MySQL. I also have experience in using various content management systems such as WordPress and Drupal. I am committed to staying up to date with the latest trends and technologies in the web development world and have a strong commitment to quality and customer satisfaction.</p>
+       </div>
+       <button type="button" name="button2" class="hide-bio">Hide Mahmoud Bio</button>
+       <div class="bio-btn">
+         <h2>Mahmoud Bio</h2>
+         <p>a web developer with over 5 years of experience in the industry. I specialize in creating custom websites and web applications with a focus on user experience and modern web technologies. With a passion for problem solving, I strive to create solutions that are both effective and efficient. My experience includes developing websites using HTML, CSS, JavaScript, PHP and MySQL. I also have experience in using various content management systems such as WordPress and Drupal. I am committed to staying up to date with the latest trends and technologies in the web development world and have a strong commitment to quality and customer satisfaction.</p>
+       </div>
+       <button type="button" name="button2" class="hide-bio">Hide Mohammad Bio</button>
+       <div class="bio-btn">
+         <h2>Mohammad Bio</h2>
+         <p>a web developer with over 5 years of experience in the industry. I specialize in creating custom websites and web applications with a focus on user experience and modern web technologies. With a passion for problem solving, I strive to create solutions that are both effective and efficient. My experience includes developing websites using HTML, CSS, JavaScript, PHP and MySQL. I also have experience in using various content management systems such as WordPress and Drupal. I am committed to staying up to date with the latest trends and technologies in the web development world and have a strong commitment to quality and customer satisfaction.</p>
+       </div>
+       <button type="button" name="button2" class="hide-bio">Hide Khalid Bio</button>
+       <div class="bio-btn">
+         <h2>Khalid Bio</h2>
+         <p>a web developer with over 5 years of experience in the industry. I specialize in creating custom websites and web applications with a focus on user experience and modern web technologies. With a passion for problem solving, I strive to create solutions that are both effective and efficient. My experience includes developing websites using HTML, CSS, JavaScript, PHP and MySQL. I also have experience in using various content management systems such as WordPress and Drupal. I am committed to staying up to date with the latest trends and technologies in the web development world and have a strong commitment to quality and customer satisfaction.</p>
+       </div>
+     </div>
+   <div class="form">
+     <form action="mahmoud.html" method="post">
+
+        <h1>Add Employees</h1>
+
+        <fieldset>
+
+             <label for="name">Employee first name</label>
+             <input type="text" id="name1" name="user_name" class"input1">
+
+             <label for="name">Employee second name</label>
+             <input type="text" id="name2" name="user_name" class"input2">
+
+             <label for="age">Employee Age</label>
+             <input type="number" id="age" name="user_age" class"input3" min="18" max="80">
+
+             <label for="job-role">Employee Job role</label>
+             <input type="text" id="job-role" name="user_job-role" class"input4">
+
+             <label for="e-mail">Employee Email</label>
+             <input type="email" id="e-mail" name="user_job-role" class"input5">
+
+          </fieldset>
+
+          <fieldset class="field">
+
+              <legend>The Employee info</legend>
+              <textarea id="bio" name="user_bio" class"input5"></textarea>
+
+              <button type="button" name="button" class="form-btn">submit</button>
+
+          </fieldset>
+   </div>
+   <script src="app.js"></script>
+  </body>
+</html>
