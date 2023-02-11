@@ -31,7 +31,6 @@ hide.addEventListener('click', () => {
       });
   }
 
-// this is the add employees section
 
 // submit.addEventListener ('click', () => {
 //   const name1Input = document.getElementById('name1');
@@ -99,7 +98,7 @@ submit.addEventListener ('click', () => {
 
 // the end of the create elements in the div ( button and the paragraph ) variables
 
-      // if(textareaInput.value) {
+      if(textareaInput.value) {
 
 
         // creating the tr inside the tbody and the th inside the tr
@@ -161,9 +160,11 @@ submit.addEventListener ('click', () => {
             jobInput.value = '';
             emailInput.value = '';
             textareaInput.value = '';
-     // }else {
-     //   alert('You left The Empolyee info empty, Do it again');
-     // }
+
+     }else {
+       alert('You left The Empolyee info empty, Do it again');
+     }
+
   } else {
      alert('You left some empty spaces, Do it again');
   }
