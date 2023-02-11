@@ -4,7 +4,7 @@ const bioBtn = document.getElementsByClassName('bio-btn');
 const hideBio = document.getElementsByClassName('hide-bio');
 const submit = document.querySelector('.form-btn');
 
-// function Clear the inputs values
+// Clear the inputs values function
 
 function clearInput() {
 
@@ -23,8 +23,7 @@ function clearInput() {
   textareaInput.value = '';
 }
 
-// the end of function Clear the inputs values
-// function creating the tr inside the tbody and the th inside the tr
+// creating the tr inside the tbody and the th inside the tr function
 
 function createTable() {
 
@@ -63,7 +62,7 @@ function createTable() {
   tr.appendChild(td2);
 }
 
-// The end of function creating the tr inside the tbody and the th inside the tr
+// The end of creating the tr inside the tbody and the th inside the tr function
 // show and hide employees bio button
 
 hide.addEventListener('click', () => {
@@ -77,27 +76,22 @@ hide.addEventListener('click', () => {
 });
 
 // the end of show and hide employees bio button
-//loop function show and hide specific employee bio button
+//loop show and hide specific employee bio button
 
-function loop() {
-  for (let i = 0; i < 5; i++) {
+ for (let i = 0; i < 5; i++) {
 
-       hideBio[i].addEventListener('click', () => {
-         if(bioBtn[i].style.display === 'none') {
-          bioBtn[i].removeAttribute('style');
-          hideBio[i].textContent = 'Hide Bio';
-        } else {
-          bioBtn[i].style.display = 'none';
-          hideBio[i].textContent = 'Show Bio';
-        }
-       });
-   }
+      hideBio[i].addEventListener('click', () => {
+        if(bioBtn[i].style.display === 'none') {
+         bioBtn[i].removeAttribute('style');
+         hideBio[i].textContent = 'Hide Bio';
+       } else {
+         bioBtn[i].style.display = 'none';
+         hideBio[i].textContent = 'Show Bio';
+       }
+      });
+  }
 
-}
-
-  loop();
-
-// the end of loop function show and hide specific employee bio button
+// the end of loop show and hide specific employee bio button
 
 submit.addEventListener ('click', () => {
 
@@ -162,7 +156,18 @@ submit.addEventListener ('click', () => {
           //  the end of creating the paragraph, button and the div
           // loop for the hide and show the button
 
-            loop();
+              for (let i = 5; i < bioBtn.length; i++) {
+
+                   hideBio[i].addEventListener('click', () => {
+                     if(bioBtn[i].style.display === 'none') {
+                      bioBtn[i].removeAttribute('style');
+                      hideBio[i].textContent = 'Hide Bio';
+                    } else {
+                      bioBtn[i].style.display = 'none';
+                      hideBio[i].textContent = 'Show Bio';
+                    }
+                   });
+               }
 
           // the end of loop for the hide and show the button
           //  clear the input after the click
@@ -204,3 +209,5 @@ submit.addEventListener ('click', () => {
   });
 
 //the end of Disable button for the textarea
+
+
