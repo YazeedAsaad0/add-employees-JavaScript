@@ -7,6 +7,14 @@
     <title></title>
   </head>
   <body>
+    <nav>
+      <div class="menu-bar">
+        <ul>
+          <li><button type="button" name="button" class="dark">Dark mode</button></li>
+          <li><button type="button" name="button" class="light">Light mode</button></li>          
+        </ul>
+       </div>
+    </nav>
      <div>
       <table>
         <thead>
@@ -58,7 +66,7 @@
     <div class="button">
      <button type="button" name="button3" class="hide-list">Hide Employees bio</button>
     </div>
-     <div class="open">
+     <div class="open" id="open">
        <button type="button" name="button2" class="hide-bio">Hide Yazeed Bio</button>
        <div class="bio-btn">
          <h2>Yazeed Bio</h2>
@@ -85,7 +93,7 @@
          <p>a web developer with over 5 years of experience in the industry. I specialize in creating custom websites and web applications with a focus on user experience and modern web technologies. With a passion for problem solving, I strive to create solutions that are both effective and efficient. My experience includes developing websites using HTML, CSS, JavaScript, PHP and MySQL. I also have experience in using various content management systems such as WordPress and Drupal. I am committed to staying up to date with the latest trends and technologies in the web development world and have a strong commitment to quality and customer satisfaction.</p>
        </div>
      </div>
-   <div class="form">
+   <div class="form" id="add">
      <form action="mahmoud.html" method="post">
 
         <h1>Add Employees</h1>
@@ -112,7 +120,7 @@
           <fieldset class="field">
 
               <legend>The Employee info</legend>
-              <button type="button" class="disable">Disable text area</button>
+              <button type="button" name="button2" class="disable">Disable text area</button>
               <textarea id="bio" name="user_bio" class"input5" placeholder="If the text area disabled you dont have to add info"></textarea>
 
               <button type="button" name="button" class="form-btn">submit</button>
