@@ -56,6 +56,15 @@ tfoot td {
   display: flex;
   justify-content: center;
 }
+ul {
+  padding: 10px;
+  margin: -8px -8px 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  background: #00CDFF;
+}
 .bio-btn,
 .open,
 .form,
@@ -72,14 +81,16 @@ button[name="button2"] {
   cursor: pointer;
   transition: color 1s;
 }
-p{
+p {
   padding: 15px 0;
   margin: 0 30px;
   font-size: 1.3em;
+  color: #00ABFF;
 }
 h2 {
   padding-top: 15px;
   margin: auto;
+  color: #00ABFF;
 }
 form {
   width: 100%;
@@ -160,4 +171,26 @@ h1 {
   p {
     padding: 0 15%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.dark  {
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: #000;
+}
+.light {
+  display: flex;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  color:black;
+  background: #fff;
 }
