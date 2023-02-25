@@ -154,6 +154,7 @@ submit.addEventListener ('click', () => {
 
               div.appendChild(p);
               p.textContent = `${textareaInput.value}`;
+              p.hyphens = "auto";
 
           //  the end of creating the paragraph, button and the div
           // loop for the hide and show the button
@@ -211,33 +212,9 @@ submit.addEventListener ('click', () => {
   });
 
 //the end of Disable button for the textarea
+// the change theme code
+const changeTheme = document.getElementById('change-theme');
 
-
-    const body = document.getElementsByTagName('body')[0];
-    const h2 = document.getElementsByTagName('h2');
-    const p = document.getElementsByTagName('p');
-    const caption = document.getElementsByTagName('caption')[0];
-    const tfoot = document.querySelector('tfoot td');
-    const darkMode = document.querySelector('.dark');
-    const lightMode = document.querySelector('.light');
-
-
-  darkMode.addEventListener('click', () => {
-
-      body.style.background = "#1F1F1F";
-      caption.style.color = "white";
-      tfoot.style.color = "white";
-      darkMode.style.display = "none";
-      lightMode.style.display = '';
-
-  });
-
-  lightMode.addEventListener('click', () => {
-
-    body.style.background = "white";
-    caption.style.color = "black";
-    tfoot.style.color = "black";
-    darkMode.style.display = '';
-    lightMode.style.display = "none";
-
-  });
+changeTheme.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});
