@@ -131,12 +131,12 @@ submit.addEventListener ('click', () => {
 
           }else if(textareaInput.value) {
 
-        // creating the tr inside the tbody and the th inside the tr
+              // creating the tr inside the tbody and the th inside the tr
 
               createTable();
 
-          // the end of creating the tr inside the tbody and the th inside the tr
-          //  creating the paragraph, button and the div
+              // the end of creating the tr inside the tbody and the th inside the tr
+              //  creating the paragraph, button and the div
 
               p.textContent = textareaInput.value;
 
@@ -156,8 +156,8 @@ submit.addEventListener ('click', () => {
               p.textContent = `${textareaInput.value}`;
               p.hyphens = "auto";
 
-          //  the end of creating the paragraph, button and the div
-          // loop for the hide and show the button
+              //  the end of creating the paragraph, button and the div
+              // loop for the hide and show the button
 
               for (let i = 5; i < bioBtn.length; i++) {
 
@@ -170,10 +170,10 @@ submit.addEventListener ('click', () => {
                       hideBio[i].textContent = 'Show Bio';
                     }
                    });
-               }
+              }
 
-          // the end of loop for the hide and show the button
-          //  clear the input after the click
+                // the end of loop for the hide and show the button
+               //  clear the input after the click
 
               clearInput();
 
@@ -214,7 +214,14 @@ submit.addEventListener ('click', () => {
 //the end of Disable button for the textarea
 // the change theme code
 const changeTheme = document.getElementById('change-theme');
+const pink = document.getElementById('pink');
+const red = document.getElementById('red');
 
 changeTheme.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 });
+
+pink.addEventListener('click', () => {
+  document.body.classList.toggle('pink');
+});
+
