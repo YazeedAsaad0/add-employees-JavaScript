@@ -216,12 +216,28 @@ submit.addEventListener ('click', () => {
 const changeTheme = document.getElementById('change-theme');
 const pink = document.getElementById('pink');
 const red = document.getElementById('red');
+const green = document.getElementById('green');
+const blue = document.getElementById('blue');
 
 changeTheme.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 });
 
 pink.addEventListener('click', () => {
+  document.body.classList.remove("red", "green");
   document.body.classList.toggle('pink');
 });
 
+red.addEventListener('click', () => {
+  document.body.classList.remove("pink", "green");
+  document.body.classList.toggle('red');
+});
+
+green.addEventListener('click', () => {
+  document.body.classList.remove("red", "pink");
+  document.body.classList.toggle('green');
+});
+
+blue.addEventListener('click', () => {
+  document.body.classList.remove("red", "pink", "green");
+});
