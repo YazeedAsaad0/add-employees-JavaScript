@@ -25,6 +25,20 @@ body.pink {
   --form-color: #ff61ff;
 }
 
+body.red {
+  --tr-color: #c55f5f;
+  --th-color: #ce3434;
+  --btn-color: #d31616;
+  --form-color: #bb4e4e;
+}
+
+body.green {
+  --tr-color: #559c68;
+  --th-color: #17a73e;
+  --btn-color: #038526;
+  --form-color: #2d7941;
+}
+
 table {
   max-width: 960px;
   margin: 10px auto;
@@ -83,7 +97,7 @@ ul {
   margin: -8px -8px 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: right;
   list-style: none;
   background: var(--btn-color);
 }
@@ -213,5 +227,26 @@ a {
   padding: 10px;
   margin: 0 10px;
   background-color: rgb(255, 110, 243);
+  cursor: pointer;
+}
+
+#green {
+  padding: 10px;
+  margin: 0 10px;
+  background-color: rgb(110, 255, 134);
+  cursor: pointer;
+}
+
+#red {
+  padding: 10px;
+  margin: 0 10px;
+  background-color: rgb(255, 74, 74);
+  cursor: pointer;
+}
+
+#blue {
+  padding: 10px;
+  margin: 0 10px;
+  background-color: rgb(74, 228, 255);
   cursor: pointer;
 }
