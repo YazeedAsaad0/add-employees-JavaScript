@@ -214,30 +214,41 @@ submit.addEventListener ('click', () => {
 //the end of Disable button for the textarea
 // the change theme code
 const changeTheme = document.getElementById('change-theme');
-const pink = document.getElementById('pink');
-const red = document.getElementById('red');
-const green = document.getElementById('green');
-const blue = document.getElementById('blue');
+const random1 = document.getElementById('random');
+
+function random() {
+  const random =Math.floor(Math.random()*8);
+  if(random === 7) {
+    document.body.classList.remove("red", "green", "pink", "yellow", "purple", "darkblue");
+    document.body.classList.toggle('orange');
+  }else if(random === 6) {
+    document.body.classList.remove("red", "green", "pink", "yellow", "purple", "orange");
+    document.body.classList.toggle('darkblue');
+  }else if(random === 5) {
+    document.body.classList.remove("red", "green", "pink", "yellow", "darkblue", "orange");
+    document.body.classList.toggle('purple');
+  }else if(random === 4) {
+    document.body.classList.remove("red", "green", "pink", "purple", "darkblue", "orange");
+    document.body.classList.toggle('yellow');
+  }else if(random === 3) {
+    document.body.classList.remove("red", "green", "yellow", "purple", "darkblue", "orange");
+    document.body.classList.toggle('pink');
+  }else if(random === 2) {
+    document.body.classList.remove("pink", "green", "yellow", "purple", "darkblue", "orange");
+    document.body.classList.toggle('red');
+  }else if(random === 1) {
+    document.body.classList.remove("red", "pink", "yellow", "purple", "darkblue", "orange");
+    document.body.classList.toggle('green');    
+  }else {
+    document.body.classList.remove("red", "pink", "green", "yellow", "purple", "darkblue", "orange");    
+  }
+  console.log(random);
+}
 
 changeTheme.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 });
 
-pink.addEventListener('click', () => {
-  document.body.classList.remove("red", "green");
-  document.body.classList.toggle('pink');
-});
-
-red.addEventListener('click', () => {
-  document.body.classList.remove("pink", "green");
-  document.body.classList.toggle('red');
-});
-
-green.addEventListener('click', () => {
-  document.body.classList.remove("red", "pink");
-  document.body.classList.toggle('green');
-});
-
-blue.addEventListener('click', () => {
-  document.body.classList.remove("red", "pink", "green");
+random1.addEventListener('click', () => {
+  random();
 });
